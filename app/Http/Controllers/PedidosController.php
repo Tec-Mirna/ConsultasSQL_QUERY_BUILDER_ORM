@@ -9,6 +9,12 @@ use Illuminate\Support\Facades\DB; //Para usar Query Builder
 
 class PedidosController extends Controller
 {
+    // INGRESO DE REGISTROS USANDO FACTORY (DOS CREADOS DESDE WORKBEANCH)
+
+    /* INSERT INTO pedidos(user_id, product, quantity, total)VALUES(66, 'Mouse', 2, 200);
+
+      INSERT INTO usuarios(name, email, phone)VALUES('Rafael', 'rafael@hotmail.com', '6759-878'); */
+
     // 1 Recupera todos los pedidos asociados al usuario con ID 2
     // Eloquent ORM
     public function getPedidosByUserId()
